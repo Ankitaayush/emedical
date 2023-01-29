@@ -1,0 +1,48 @@
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  
+  .footer-icons a {
+    color: #333;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+  
+  .footer-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .footer-form input[type="email"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 1rem;
+  }
+  
+  .footer-form button[type="submit"] {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #333;
+    color: rgb(161, 246, 135);
+    cursor: pointer;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin-top: auto;
+    background-color: rgb(178, 232, 113);
+  }
+  
+  footer p {
+    margin-top: 1rem;
+    color: #333;
+  }
+  
