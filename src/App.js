@@ -6,7 +6,7 @@ import Home from './components/Home';
 import Footer from './components/foot';
 import Logo from './components/logo';
 import SearchBar from './components/Search';
-import MultiSelect from './components/checkbox';
+import MultiSelectDropdownMenu from './components/checkbox';
 import CardList from "./components/cardlist";
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
 </div>
 
 <SearchBar/>
-<MultiSelect/>
+<MultiSelectDropdownMenu/>
     <Routes>
         <Route path='/' exact component={Home} />
         </Routes>
