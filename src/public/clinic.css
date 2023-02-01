@@ -1,4 +1,4 @@
-.search-container {
+.search-container1 {
   display: flex;
   justify-content: center;
   margin: 1rem 0;
@@ -17,7 +17,7 @@ input[type="text"] {
   margin-right: 1rem;
 }
 
-button {
+.btn {
   padding: 0.5rem 1rem;
   background-color: rgb(95, 201, 236);
   border-radius: 5px;
@@ -27,7 +27,7 @@ button {
   cursor: pointer;
 }
 
-li {
+.li1 {
   list-style-type: none;
   padding: 1rem;
   border: 1px solid lightgray;

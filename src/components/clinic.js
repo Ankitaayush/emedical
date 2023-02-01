@@ -22,17 +22,17 @@ const ClinicList = () => {
 
   return (
     <div>
-      <div className="search-container">
+      <div className="search-container1">
         <input type="text" placeholder="Search clinics" value={searchTerm} onChange={handleSearch} />
-        <button>Search</button>
+        <button className="btn">Search</button>
       </div>
       <ul>
         {filteredClinics.map(clinic => (
-          <li key={clinic.id}>
+          <li className="li1" key={clinic.id}>
             <h3>{clinic.name}</h3>
             <p>Address: {clinic.address}</p>
             <p>Price: {clinic.price} | Distance: {clinic.distance}</p>
-            <button>Book</button>
+            <button className="btn">Book</button>
           </li>
         ))}
       </ul>
