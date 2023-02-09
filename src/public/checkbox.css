@@ -14,19 +14,23 @@
 }
 
 .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1;
-  display: none;
+  /* position: relative;
+  top: 100%; */
+  /* left: 0; */
+  /* z-index: 1; */
+  /* display: none; */
   justify-content: center;
   width: 100%;
-  padding: 12px 0;
+  padding: 0 0;
   margin: 0;
   list-style: none;
   background-color: white;
   border: 1px solid #ccc;
-  border-top: none;
+  border: none;
+  height: 30vh;
+  overflow-y: scroll;
+  
+
 }
 
 .dropdown-menu li {
@@ -39,7 +43,7 @@
 }
 
 .selected {
-  background-color: #ddd;
+  background-color: #b6ee94d2;
 }
 
 .dropdown:hover .dropdown-menu {
