@@ -6,6 +6,7 @@ import foot from './foot'
 import Container from './pre';
 import MultiSelectDropdownMenu from './checkbox';
 import CardList from './cardlist';
+
 const Home=()=>{
 return (
     <div>

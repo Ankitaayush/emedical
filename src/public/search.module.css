@@ -1,4 +1,4 @@
-.search-container {
+.search_container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     margin: 20px auto;
   }
   
-  .search-input {
+  .search_input {
     height: 40px;
     width: 80%;
     padding: 10px;

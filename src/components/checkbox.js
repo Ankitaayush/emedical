@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+
+import Model from "./model";
+
 import '../public/checkbox.css'
 const MultiSelectDropdownMenu = () => {
   const options = [
@@ -27,12 +30,30 @@ const MultiSelectDropdownMenu = () => {
     }
   };
 
+  const content = (
+    <React.Fragment>
+      <ul className="dropdown-menu">
+            {options.map((option) => (
+              <li
+                key={option.value}
+                onClick={() => handleOptionClick(option.value)}
+                className={selectedOptions.includes(option.value) ? "selected" : ""}
+              >
+                {option.label}
+              </li>
+            ))}
+        </ul>
+      </React.Fragment>
+  )
+
   return (
     <div className="dropdown">
       <button onClick={handleClick}>
         {selectedOptions.length ? selectedOptions.join(", ") : "Select Options"}
       </button>
-      {showMenu && (
+      {showMenu && <Model onClose={handleClick} > {content} </Model> }
+      {/* {showMenu && content }  */}
+      {/* {showMenu && (
         <ul className="dropdown-menu">
           {options.map((option) => (
             <li
@@ -44,7 +65,7 @@ const MultiSelectDropdownMenu = () => {
             </li>
           ))}
         </ul>
-      )}
+      )} */}
     </div>
   );
 };
