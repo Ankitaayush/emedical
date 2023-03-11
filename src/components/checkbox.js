@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-import Model from "./model";
+import Button from "./shared/formElements/Button";
+import Model from "./modal";
 
 import '../public/checkbox.css'
 const MultiSelectDropdownMenu = () => {
@@ -51,7 +52,15 @@ const MultiSelectDropdownMenu = () => {
       <button onClick={handleClick}>
         {selectedOptions.length ? selectedOptions.join(", ") : "Select Options"}
       </button>
-      {showMenu && <Model onClose={handleClick} > {content} </Model> }
+      {showMenu &&
+         <Model 
+            onClose={handleClick} 
+            header="Select Treatments" 
+            footer={<Button type="button" className="btn-closeDrp" onClick={handleClick}> Close</Button>}
+            footerClass="footerClass"
+          > 
+            {content} 
+          </Model> }
       {/* {showMenu && content }  */}
       {/* {showMenu && (
         <ul className="dropdown-menu">

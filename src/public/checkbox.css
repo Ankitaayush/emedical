@@ -49,3 +49,7 @@
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
+.btn-closeDrp{
+  width: 50%;
+}
