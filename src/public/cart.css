@@ -1,59 +1,57 @@
-.cart {
-    width: 500px;
-    margin: 50px auto;
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px #ccc;
-  }
-  
-  .cart h2 {
-    margin-top: 0;
-    padding: 20px;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  
-  .cart ul {
-    list-style: none;
-    padding: 20px;
-    margin: 0;
-  }
-  
-  .cart li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 1px 2px #ccc;
-  }
-  
-  .cart button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
-    box-shadow: 0 2px 5px #ccc;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .cart button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px #ccc;
-  }
-  
-  .cart button:active {
-    transform: translateY(2px);
-    box-shadow: 0 1px 2px #ccc;
-  }
-  
+.Cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.Cart-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.Cart-total {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.CartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.CartItem-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.CartItem-price {
+  font-size: 18px;
+}
+
+.CartItem-delete {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.Cart-wrapper {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.CartItem-add {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
