@@ -6,7 +6,7 @@ import classes from '../public/modal.module.css';
 
 const Backdrop = (props) => {
     return (
-        <div className={`${classes.backdrop} classes.backdrop`} onClick={props.onClose}></div>
+        <div className={`${classes.backdrop} ${props.backdrop}`} onClick={props.onClose}></div>
     );
 }
 
@@ -22,17 +22,17 @@ const ModalOverlay = props => {
 
     const content = (
         <div className={`${classes.modal} ${props.className}`} style={props.style}>
-            <header className={`${classes.modal__header} classes.${props.headerClass}`}>
+            <header className={`${classes.modal__header} ${props.headerClass}`}>
                 <h2>{props.header}</h2>
             </header>
 
             <form onSubmit={props.onSubmit ? props.onSubmit : (event => event.preventDefault()) }>
-                <div className={`${classes.modal__content} classes.${props.contentClass}`}>
+                <div className={`${classes.modal__content} ${props.contentClass}`}>
                     {props.children}
                 </div>
 
             </form>
-            {props.footer && <footer className={`${classes.modal__footer} classes.${props.footerClass}`}>
+            {props.footer && <footer className={`${classes.modal__footer} ${props.footerClass}`}>
                 {props.footer}
             </footer>}
         </div>
