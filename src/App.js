@@ -18,6 +18,7 @@ import Cart from './components/cart';
 import  Pgg  from './components/pgg';
 import Addaddress from './components/addaddress';
 import Addcustomer from './components/addcustomer';
+import AddNewAddress from './components/AddNewAddress';
 function App() {
   const [showAuth,setShowAuth] = useState(false)
 
@@ -39,6 +40,7 @@ function App() {
         <Route path="/pgg/detail" element={<Pgg/>}/>
         <Route path="/pgg/addcustomer" element={<Addcustomer/>}/>
         <Route path="/pgg/addaddress" element={<Addaddress/>}/>
+        <Route path="/pgg/addnewaddress" element={<AddNewAddress/>}/>
         </Routes>
     
         <Footer/>

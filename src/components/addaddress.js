@@ -8,7 +8,7 @@ const deleteHandler = () => {
 const Addaddress = () => {
   return (
     <React.Fragment>
-      <button className="addaddressrbtn"> Addaddress</button>
+      <Link  to="/pgg/addnewaddress" className="addaddressrbtn"> Addaddress</Link>
       <div className="flexnew">
         <div className="details">
           {
