@@ -1,14 +1,26 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
+import AddCustomerDetail from "./AddCustomerDetail";
+import Button from "./shared/formElements/Button";
+
 import "../public/addcustomer.css"
+
 const Addcustomer = () => {
+  const [showAddCust,setShowAddCust] = useState(false);
+
   const deleteHandler = () => {
     console.log("op nishak");
   };
 
+  const changeStateHandler = () => {
+    setShowAddCust(prevState => !prevState);
+  }
+
   return (
     <React.Fragment>
-      <button className="addcustomerbtn"> Addcustomer</button>
+      <AddCustomerDetail show={showAddCust} onClose={changeStateHandler} />
+      <Button className="addcustomerbtn" type="button" onClick={changeStateHandler}> Addcustomer</Button>
       <div className="flexnew">
         <div className="details">
           {

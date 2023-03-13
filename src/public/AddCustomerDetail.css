@@ -1,0 +1,11 @@
+.__personelInfo{
+    display: flex;
+}
+
+.__personelInfo select{
+    height: 3rem;
+}
+
+.__options{
+    margin-top: 0.5rem;
+}
