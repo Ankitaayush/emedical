@@ -33,12 +33,12 @@ const MultiSelectDropdownMenu = () => {
 
   const content = (
     <React.Fragment>
-      <ul className="dropdown-menu">
+      <ul className="dropdown-menu_">
             {options.map((option) => (
               <li
                 key={option.value}
                 onClick={() => handleOptionClick(option.value)}
-                className={selectedOptions.includes(option.value) ? "selected" : ""}
+                className={selectedOptions.includes(option.value) ? "selected_" : ""}
               >
                 {option.label}
               </li>
@@ -48,7 +48,7 @@ const MultiSelectDropdownMenu = () => {
   )
 
   return (
-    <div className="dropdown">
+    <div className="dropdown_">
       <button onClick={handleClick}>
         {selectedOptions.length ? selectedOptions.join(", ") : "Select Options"}
       </button>

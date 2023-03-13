@@ -9,7 +9,7 @@ import './Wrapcard.css';
 
 const Wrapcard = props => {
   return (
-    <div className={`card ${props.className}`} style={props.style}>
+    <div className={`wrapCard ${props.className}`} style={props.style}>
       {props.children}
     </div>
   );

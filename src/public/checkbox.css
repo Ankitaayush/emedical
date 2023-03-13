@@ -1,10 +1,10 @@
-.dropdown {
+.dropdown_ {
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-.dropdown button {
+.dropdown_ button {
 
   padding: 12px;
   border: 1px solid #ccc;
@@ -13,7 +13,7 @@
   font-size: 16px;
 }
 
-.dropdown-menu {
+.dropdown-menu_ {
   /* position: relative;
   top: 100%; */
   /* left: 0; */
@@ -33,12 +33,12 @@
 
 }
 
-.dropdown-menu li {
+.dropdown-menu_ li {
   padding: 12px;
   cursor: pointer;
 }
 
-.dropdown-menu li:hover {
+.dropdown-menu_ li:hover {
   background-color: #f2f2f2;
 }
 
@@ -46,7 +46,7 @@
   background-color: #b6ee94d2;
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown_:hover .dropdown-menu_ {
   display: block;
 }
 
