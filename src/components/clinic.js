@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../public/clinic.css';
 
 const clinics = [
@@ -62,7 +63,7 @@ const ClinicList = () => {
             <h3>{clinic.name}</h3>
             <p>Address: {clinic.address}</p>
             <p>Price: {clinic.price} | Distance: {clinic.distance} miles</p>
-            <button className="btn91">Book</button>
+            <Link to="/pgg/detail" className="btn91">Book</Link>
           </li>
         ))}
       </ul>

@@ -15,7 +15,9 @@ import CardList from "./components/cardlist";
 import Container from "./components/pre";
 import ClinicList from "./components/clinic";
 import Cart from './components/cart';
-
+import  Pgg  from './components/pgg';
+import Addaddress from './components/addaddress';
+import Addcustomer from './components/addcustomer';
 function App() {
   const [showAuth,setShowAuth] = useState(false)
 
@@ -34,6 +36,9 @@ function App() {
         {/* <Route path="/login" element={<Auth/>}/> */}
         <Route path="/clinic" element={<ClinicList/>}/>
         <Route path="/cart" element={<Cart/>}/>
+        <Route path="/pgg/detail" element={<Pgg/>}/>
+        <Route path="/pgg/addcustomer" element={<Addcustomer/>}/>
+        <Route path="/pgg/addaddress" element={<Addaddress/>}/>
         </Routes>
     
         <Footer/>
