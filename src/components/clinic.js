@@ -40,33 +40,30 @@ const ClinicList = () => {
 
   return (
     <div>
-      <div className="search-container1">
-        <input type="text" placeholder="Search clinics" value={searchTerm} onChange={handleSearch} />
-        <button className="btn99">Search</button>
+      <div className="search-container1 container">
+        <input type="text" placeholder="Search clinics" className="clinicSearchBox" value={searchTerm} onChange={handleSearch} />
+        <button className="btn btn-lg btn-primary">Search</button>
       </div>
-      <div className="filter-container">
-        <button className="filter-btn1" onClick={() => handleFilter('price')}>Sort by Price</button>
-        <button className="filter-btn2" onClick={() => handleFilter('distance')}>Sort by Distance</button>
+      <div className="container filter-container">
+        <button className="btn btn-success m-1" onClick={() => handleFilter('price')}>Sort by Price</button>
+        <button className="btn btn-success m-1" onClick={() => handleFilter('distance')}>Sort by Distance</button>
       </div>
       <div className="flex">
-        {/* <div className="flex1"> */}
-      <div className="certificates">
-        <h2>CERTIFICATIONS</h2>
-      </div>
-      {/* <div className="lab-rating">
-<h2>lab-rating</h2>
-      </div> */}
-      {/* </div> */}
-      <ul>
-        {filteredAndSearchedClinics.map(clinic => (
-          <li className="li1" key={clinic.id}>
-            <h3>{clinic.name}</h3>
-            <p>Address: {clinic.address}</p>
-            <p>Price: {clinic.price} | Distance: {clinic.distance} miles</p>
-            <Link to="/pgg/detail" className="btn91">Book</Link>
-          </li>
-        ))}
-      </ul>
+        <div className="certificates">
+          <h2>CERTIFICATIONS</h2>
+        </div>
+        <div className="container">
+          <ul>
+            {filteredAndSearchedClinics.map(clinic => (
+              <li className="li1" key={clinic.id}>
+                <h3>{clinic.name}</h3>
+                <p>Address: {clinic.address}</p>
+                <p>Price: {clinic.price} | Distance: {clinic.distance} miles</p>
+                <Link to="/pgg/detail" className="btn btn-primary">Book</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import "../public/pre.css";
 const FileUpload = () => {
   return (
     <div className="container upload">
-      <label className="custom-file-upload btn btn-success">
+      <label className="custom-file-upload btn btn-info">
         <input type="file" />
         Upload your Prescription
       </label>
@@ -15,28 +15,28 @@ const FileUpload = () => {
 };
 
 const SearchBar = () => {
-    const [searchTerm, setSearchTerm] = useState("");
-  
-    const handleChange = (event) => {
-      setSearchTerm(event.target.value);
-    };
-  
-    return (
-      <div className="search-container">
-        <input
-          type="text"
-          placeholder="Search..."
-          value={searchTerm}
-          onChange={handleChange}
-          className="search-input"
-        />
-      </div>
-    );
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleChange = (event) => {
+    setSearchTerm(event.target.value);
   };
+
+  return (
+    <div className="search-container">
+      <input
+        type="text"
+        placeholder="Search..."
+        value={searchTerm}
+        onChange={handleChange}
+        className="search-input"
+      />
+    </div>
+  );
+};
 
 const Container = () => {
   return (
-    <div className="container">
+    <div className="container searchDescWrap">
       <SearchBar />
       <FileUpload />
     </div>

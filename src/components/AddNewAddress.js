@@ -13,17 +13,17 @@ export default function AddNewAddress() {
         <label htmlFor="">Work</label>
         <br />
         <label htmlFor="">Pincode</label>
-        <input type="text" className='pincode' />
+        <input className="addNewAddressInputBox pincode" type="text" />
         <br />
         <label htmlFor="">City</label>
-        <input type="text" />
+        <input className="addNewAddressInputBox" type="text" />
         <label htmlFor="">State</label>
-        <input type="text" />
+        <input className="addNewAddressInputBox" type="text" />
         <br />
         <label htmlFor="">First Name</label>
-        <input type="text" />
+        <input className="addNewAddressInputBox" type="text" />
         <label htmlFor="">Last Name</label>
-        <input type="text" />
+        <input className="addNewAddressInputBox" type="text" />
         <br />
         {/* <label htmlFor="">Address</label> */}
         <textarea name="" cols="30" rows="2" placeholder="Address"></textarea>

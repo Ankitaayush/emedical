@@ -29,8 +29,18 @@
   border: none;
   height: 30vh;
   overflow-y: scroll;
-  
 
+
+}
+
+#HomePageSearchButton {
+
+  width: 300px;
+}
+
+.homePageSearchForm {
+
+  text-align: center;
 }
 
 .dropdown-menu_ li {
@@ -50,6 +60,6 @@
   display: block;
 }
 
-.btn-closeDrp{
+.btn-closeDrp {
   width: 50%;
 }

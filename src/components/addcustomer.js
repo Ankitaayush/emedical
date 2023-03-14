@@ -7,7 +7,7 @@ import Button from "./shared/formElements/Button";
 import "../public/addcustomer.css"
 
 const Addcustomer = () => {
-  const [showAddCust,setShowAddCust] = useState(false);
+  const [showAddCust, setShowAddCust] = useState(false);
 
   const deleteHandler = () => {
     console.log("op nishak");
@@ -20,7 +20,7 @@ const Addcustomer = () => {
   return (
     <React.Fragment>
       <AddCustomerDetail show={showAddCust} onClose={changeStateHandler} />
-      <Button className="addcustomerbtn" type="button" onClick={changeStateHandler}> Addcustomer</Button>
+      <Button className="btn btn-info m-2" type="button" onClick={changeStateHandler}> Add Customer</Button>
       <div className="flexnew">
         <div className="details">
           {
@@ -29,7 +29,7 @@ const Addcustomer = () => {
                 <h2>TEST NAME</h2>
               </div>
               <div className="incdec">
-                <button type="submit" onClick={deleteHandler}>
+                <button class="btn btn-info" type="submit" onClick={deleteHandler}>
                   Remove
                 </button>
               </div>
@@ -37,14 +37,14 @@ const Addcustomer = () => {
           }
         </div>
         <div className="Box">
-            <div className="Boxitem">
-          <div className="left-column">{/* content for left column */}</div>
-          <div className="right-column">{/* content for right column */}</div>
-          <div className="right-column2">{/* content for right column */}</div>
-</div>
-<Link to="/pgg/addaddress" className="continuebtn" > continue</Link>
+          <div className="Boxitem">
+            <div className="left-column">{/* content for left column */}</div>
+            <div className="right-column">{/* content for right column */}</div>
+            <div className="right-column2">{/* content for right column */}</div>
+          </div>
+          <Link to="/pgg/addaddress" className="continuebtn" > continue</Link>
         </div>
-       
+
       </div>
       <Link to="/clinic" className="b11">
         {" "}

@@ -9,7 +9,7 @@ import Wrapcard from './shared/UIElements/Wrapcard';
 import '../public/auth.css'
 
 const Auth = (props) => {
-  const [sendOtp,setSendOtp] =useState(false);
+  const [sendOtp, setSendOtp] = useState(false);
 
   const [formData, setFormData] = useState({
     username: '',
@@ -42,11 +42,11 @@ const Auth = (props) => {
     //sending data at baend and validation ;
   }
 
-  const btnContent =(
+  const btnContent = (
     <div>
-      {!sendOtp && <Button type="button" onClick={otpSendHandler} inverse="inverse" className="btn-mrg"> Send OTP</Button>}
-      {sendOtp && <Button type="submit" onClick={submitHandler} inverse="inverse" className="btn-mrg">Login</Button>}
-      <Button type="button" onClick={props.onClick}> Close</Button>
+      {!sendOtp && <Button type="button" onClick={otpSendHandler} inverse="inverse" className="btn btn-primary btn-mrg m-1"> Send OTP</Button>}
+      {sendOtp && <Button type="submit" onClick={submitHandler} inverse="inverse" className="btn btn-primary btn-mrg">Login</Button>}
+      <Button type="button" onClick={props.onClick} className="btn btn-primary m-1"> Close</Button>
     </div>
   );
 
@@ -58,21 +58,21 @@ const Auth = (props) => {
         footer={btnContent}
       >
         <Wrapcard>
-          <Input 
-            element = "input"
-            label = "Phone Number"
-            id = "phoneNumber"
+          <Input
+            element="input"
+            label="Phone Number"
+            id="phoneNumber"
             type="number"
           />
-          {sendOtp && 
-            <Input 
-              element = "input"
-              label = "OTP"
-              id = "otp"
-              type = "number"
+          {sendOtp &&
+            <Input
+              element="input"
+              label="OTP"
+              id="otp"
+              type="number"
             />
           }
-            
+
         </Wrapcard>
       </Model>
     </React.Fragment>

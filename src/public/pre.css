@@ -1,6 +1,7 @@
-.container {
+.searchDescWrap {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .custom-file-upload {
@@ -15,31 +16,30 @@ input[type="file"] {
   display: none;
 }
 
-input[type="text"] {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 10px 0 0 10px;
-  width: 60%;
-}
 .search-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
-  width: 500px;
-  margin: 0px auto;
-  margin-right: 250px;
+  width: 50%;
+  /* margin-right: 0px; */
+  margin: auto;
 }
 
 .search-input {
+  padding: 25px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px 0 0 10px;
+  width: 60%;
   height: 40px;
-  width: 80%;
-  padding: 10px;
+  width: 60%;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  justify-content: center;
 }
+
 .custom-file-upload {
   border: 1px solid #ccc;
   display: inline-block;
@@ -55,9 +55,30 @@ input[type="file"] {
 
 .upload {
 
-  background-color: #f0fff0;
-  width: 200px;
+  display: flex;
+  /* background-color: #f0fff0; */
+  width: 50%;
   text-align: center;
   padding: 10px;
-  margin-right: 250px;
+  margin: 0px;
+}
+
+@media screen and (max-width: 500px) {
+
+  .searchDescWrap {
+
+    flex-direction: column;
+  }
+
+  .search-input {
+
+    width: 100%;
+    margin: 0px;
+    margin-top: 20px;
+  }
+
+  .upload {
+
+    width: 100%;
+  }
 }

@@ -34,35 +34,36 @@ const MultiSelectDropdownMenu = () => {
   const content = (
     <React.Fragment>
       <ul className="dropdown-menu_">
-            {options.map((option) => (
-              <li
-                key={option.value}
-                onClick={() => handleOptionClick(option.value)}
-                className={selectedOptions.includes(option.value) ? "selected_" : ""}
-              >
-                {option.label}
-              </li>
-            ))}
-        </ul>
-      </React.Fragment>
+        {options.map((option) => (
+          <li
+            key={option.value}
+            onClick={() => handleOptionClick(option.value)}
+            className={selectedOptions.includes(option.value) ? "selected_" : ""}
+          >
+            {option.label}
+          </li>
+        ))}
+      </ul>
+    </React.Fragment>
   )
 
   return (
-    <div className="dropdown_">
-      <button onClick={handleClick}>
-        {selectedOptions.length ? selectedOptions.join(", ") : "Select Options"}
-      </button>
-      {showMenu &&
-         <Model 
-            onClose={handleClick} 
-            header="Select Treatments" 
+    <form className="container homePageSearchForm m-3">
+      <div className="dropdown_">
+        <button onClick={handleClick}>
+          {selectedOptions.length ? selectedOptions.join(", ") : "Select Options"}
+        </button>
+        {showMenu &&
+          <Model
+            onClose={handleClick}
+            header="Select Treatments"
             footer={<Button type="button" className="btn-closeDrp" onClick={handleClick}> Close</Button>}
             footerClass="footerClass"
-          > 
-            {content} 
-          </Model> }
-      {/* {showMenu && content }  */}
-      {/* {showMenu && (
+          >
+            {content}
+          </Model>}
+        {/* {showMenu && content }  */}
+        {/* {showMenu && (
         <ul className="dropdown-menu">
           {options.map((option) => (
             <li
@@ -75,7 +76,10 @@ const MultiSelectDropdownMenu = () => {
           ))}
         </ul>
       )} */}
-    </div>
+
+      </div>
+      <button id="HomePageSearchButton" className="btn btn-primary m-3 btn-lg btn-primary">Search</button>
+    </form>
   );
 };
 

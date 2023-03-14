@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../public/pgg.css";
-
+import dustbin from '../images/dustbin_svg.svg'
+import plus from '../images/plus_svg.svg'
+import minus from '../images/minus_png.png'
 const Pgg = () => {
   const [val, setVal] = useState(1);
 
@@ -26,27 +28,21 @@ const Pgg = () => {
                 <h2>TEST NAME</h2>
               </div>
               <div className="incdec">
-                <button type="submit" onClick={deleteHandler}>
-                  TY
-                </button>
-                <button type="submit" onClick={incrementHandler}>
-                  +
-                </button>
+                <img src={dustbin} alt="" onClick={deleteHandler} />
+                <img src={plus} alt="" onClick={incrementHandler} />
                 <span>{val}</span>
-                <button type="submit" onClick={decrementHandler}>
-                  -
-                </button>
+                <img src={minus} alt="" onClick={decrementHandler} />
               </div>
             </div>
           )}
         </div>
         <div className="Box">
-            <div className="Boxitem">
-          <div className="left-column">{/* content for left column */}</div>
-          <div className="right-column">{/* content for right column */}</div>
-          <div className="right-column2">{/* content for right column */}</div>
-</div>
-<Link to="/pgg/addcustomer" className="continuebtn" > continue</Link>
+          <div className="Boxitem">
+            <div className="left-column">{/* content for left column */}</div>
+            <div className="right-column">{/* content for right column */}</div>
+            <div className="right-column2">{/* content for right column */}</div>
+          </div>
+          <Link to="/pgg/addcustomer" className="continuebtn" > continue</Link>
         </div>
       </div>
       <Link to="/clinic" className="b11">
