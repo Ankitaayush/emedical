@@ -1,9 +1,10 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import '../public/footer.css'
-const Footer = () => {
+
+const Footer = (props) => {
   return (
-    <footer>
+    <footer className={`footer`}>
       <div className="footer-links">
         <a href="#">About Us</a>
         <a href="#">Contact</a>

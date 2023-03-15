@@ -29,22 +29,24 @@ function App() {
   }
 
   return (
-   <Router>
-    <Navbar onClick={viewAuthHandler}/>
+    <React.Fragment>
+      <Router>
+        <Navbar onClick={viewAuthHandler}/>
 
-    <Routes>
-        <Route path="/" element={<Home showAuth={showAuth} onClick={viewAuthHandler} />} />
-        {/* <Route path="/login" element={<Auth/>}/> */}
-        <Route path="/clinic" element={<ClinicList/>}/>
-        <Route path="/cart" element={<Cart/>}/>
-        <Route path="/pgg/detail" element={<Pgg/>}/>
-        <Route path="/pgg/addcustomer" element={<Addcustomer/>}/>
-        <Route path="/pgg/addaddress" element={<Addaddress/>}/>
-        <Route path="/pgg/addnewaddress" element={<AddNewAddress/>}/>
-        </Routes>
-    
-        <Footer/>
-   </Router>
+        <Routes>
+            <Route path="/" element={<Home showAuth={showAuth} onClick={viewAuthHandler} />} />
+            {/* <Route path="/login" element={<Auth/>}/> */}
+            <Route path="/clinic" element={<ClinicList/>}/>
+            <Route path="/cart" element={<Cart/>}/>
+            <Route path="/pgg/detail" element={<Pgg/>}/>
+            <Route path="/pgg/addcustomer" element={<Addcustomer/>}/>
+            <Route path="/pgg/addaddress" element={<Addaddress/>}/>
+            <Route path="/pgg/addnewaddress" element={<AddNewAddress/>}/>
+            </Routes>
+        
+      </Router>
+            <Footer className=""/>
+   </React.Fragment>
   );
 }
 

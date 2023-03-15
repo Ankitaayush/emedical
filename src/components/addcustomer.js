@@ -46,10 +46,12 @@ const Addcustomer = () => {
         </div>
 
       </div>
-      <Link to="/pgg/detail" className="b11">
-        {" "}
-        Back
-      </Link>
+      <div>
+        <Link to="/pgg/detail" className="b11">
+          {" "}
+          Back
+        </Link>
+      </div>
     </React.Fragment>
   );
 };

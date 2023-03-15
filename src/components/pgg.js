@@ -45,10 +45,12 @@ const Pgg = () => {
           <Link to="/pgg/addcustomer" className="continuebtn" > continue</Link>
         </div>
       </div>
-      <Link to="/clinic" className="b11">
-        {" "}
-        Back
-      </Link>
+      <div>
+        <Link to="/clinic" className="b11">
+          {" "}
+          Back
+        </Link>
+      </div>
     </React.Fragment>
   );
 };

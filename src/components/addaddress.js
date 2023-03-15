@@ -33,10 +33,12 @@ const Addaddress = () => {
 <button className="continuebtn" > continue</button>
         </div>
       </div>
-      <Link to="/pgg/addcustomer" className="b11">
-        {" "}
-        Back
-      </Link>
+      <div>
+        <Link to="/pgg/addcustomer" className="b11">
+          {" "}
+          Back
+        </Link>
+      </div>
     </React.Fragment>
   );
 };

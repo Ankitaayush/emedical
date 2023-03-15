@@ -1,3 +1,18 @@
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+}
+
+/* to stick the footer to the bottom of the page */
+#root{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 .App {
   text-align: center;
 }
