@@ -33,7 +33,7 @@ const Addaddress = () => {
 <button className="continuebtn" > continue</button>
         </div>
       </div>
-      <Link to="/clinic" className="b11">
+      <Link to="/pgg/addcustomer" className="b11">
         {" "}
         Back
       </Link>

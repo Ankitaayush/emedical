@@ -46,7 +46,7 @@ const Addcustomer = () => {
         </div>
 
       </div>
-      <Link to="/clinic" className="b11">
+      <Link to="/pgg/detail" className="b11">
         {" "}
         Back
       </Link>
