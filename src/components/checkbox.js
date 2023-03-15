@@ -67,21 +67,6 @@ const MultiSelectDropdownMenu = () => {
           >
             {content}
           </Model>}
-        {/* {showMenu && content }  */}
-        {/* {showMenu && (
-        <ul className="dropdown-menu">
-          {options.map((option) => (
-            <li
-              key={option.value}
-              onClick={() => handleOptionClick(option.value)}
-              className={selectedOptions.includes(option.value) ? "selected" : ""}
-            >
-              {option.label}
-            </li>
-          ))}
-        </ul>
-      )} */}
-
       </div>
       <button id="HomePageSearchButton" className="btn btn-primary m-3 btn-lg btn-primary">Search</button>
     </form>
