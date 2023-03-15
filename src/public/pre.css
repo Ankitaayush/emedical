@@ -1,8 +1,8 @@
-.searchDescWrap {
+/* .searchDescWrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+} */
 
 .custom-file-upload {
   border: 1px solid #ccc;
@@ -17,13 +17,7 @@ input[type="file"] {
 }
 
 .search-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 50%;
-  /* margin-right: 0px; */
-  margin: auto;
+  text-align: right;
 }
 
 .search-input {
