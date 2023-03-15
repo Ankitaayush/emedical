@@ -13,7 +13,6 @@ import CardList from './cardlist';
 
 const Home=(props)=>{
 
-
 return (
     <div>
       {props.showAuth && <Auth onClick={props.onClick} show={props.showAuth} />}

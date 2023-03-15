@@ -25,6 +25,7 @@ const AddCustomerDetail = (props) => {
                             <React.Fragment>
                                 <Button 
                                     type="submit"
+                                    onClick={props.onClose}
                                 >
                                     Done
                                 </Button>

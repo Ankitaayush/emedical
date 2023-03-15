@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 
 import Button from "./shared/formElements/Button";
 import Model from "./modal";
@@ -19,9 +19,9 @@ const MultiSelectDropdownMenu = () => {
   const [selectedOptions, setSelectedOptions] = useState([]);
   const [showMenu, setShowMenu] = useState(false);
 
-  const handleClick = () => {
-    setShowMenu(!showMenu);
-  };
+  const handleClick =useCallback( () => {
+    setShowMenu(prevState => !prevState);
+  },[]);
 
   const handleOptionClick = (selectedOption) => {
     if (selectedOptions.includes(selectedOption)) {
@@ -47,17 +47,22 @@ const MultiSelectDropdownMenu = () => {
     </React.Fragment>
   )
 
+  const testFilterHandler =(event) => {
+    event.preventDefault();
+    //send the selected filter information 
+  }
+
   return (
-    <form className="container homePageSearchForm m-3">
+    <form onClick={testFilterHandler} className="container homePageSearchForm m-3">
       <div className="dropdown_">
-        <button onClick={handleClick}>
+        <button type="button"  onClick={handleClick}>
           {selectedOptions.length ? selectedOptions.join(", ") : "Select Options"}
         </button>
         {showMenu &&
           <Model
             onClose={handleClick}
             header="Select Treatments"
-            footer={<Button type="button" className="btn-closeDrp" onClick={handleClick}> Close</Button>}
+            footer={<Button type="button" className="btn-closeDrp btn btn-primary m-1" onClick={handleClick}> Close</Button>}
             footerClass="footerClass"
           >
             {content}
