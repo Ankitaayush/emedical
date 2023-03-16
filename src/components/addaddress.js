@@ -8,7 +8,7 @@ const deleteHandler = () => {
 const Addaddress = () => {
   return (
     <React.Fragment>
-      <Link  to="/pgg/addnewaddress" className="addaddressrbtn"> Addaddress</Link>
+      <Link  to="/pgg/addnewaddress" className="addaddressbtn"> Addaddress</Link>
       <div className="flexnew">
         <div className="details">
           {
@@ -30,7 +30,7 @@ const Addaddress = () => {
           <div className="right-column">{/* content for right column */}</div>
           <div className="right-column2">{/* content for right column */}</div>
 </div>
-<button className="continuebtn" > continue</button>
+<button className="b11" > continue</button>
         </div>
       </div>
       <div>

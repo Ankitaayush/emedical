@@ -42,7 +42,7 @@ const Addcustomer = () => {
             <div className="right-column">{/* content for right column */}</div>
             <div className="right-column2">{/* content for right column */}</div>
           </div>
-          <Link to="/pgg/addaddress" className="continuebtn" > continue</Link>
+          <Link to="/pgg/addaddress" className="b11" > continue</Link>
         </div>
 
       </div>
